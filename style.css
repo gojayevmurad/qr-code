@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@200;300;400;500;600&display=swap');
+
+* {
+    font-family: 'Sofia Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+    text-align: center;
+
+}
+
+.wrapper {
+    height: 300px;
+    width: 420px;
+    background-color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    transition: height .3s;
+    overflow: hidden;
+}
+
+.header h1 {
+    font-size: 30px;
+    color: cadetblue;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.header p {
+    font-size: 15px;
+    color: rgba(0, 0, 0, .6);
+}
+
+.form {
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.form :where(input, button) {
+    padding: 0 15px;
+    margin: 0 auto;
+    height: 80px;
+    border: none;
+    outline: none;
+    width: 300px;
+    border-radius: 8px;
+}
+
+.form input {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.61);
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.form input::placeholder {
+    color: rgba(0, 0, 0, .4);
+    letter-spacing: 3px;
+}
+
+.form button {
+    cursor: pointer;
+    background-color: cadetblue;
+    color: white;
+    font-size: 25px;
+}
+
+
+.result {
+    height: 0;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 8px;
+}
+
+.wrapper.active {
+    height: 550px;
+}
+
+.wrapper.active .result {
+    height: 240px;
+}
+
+.result p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.result img {
+    height: 200px;
+    width: 200px;
+}

@@ -11,15 +11,38 @@
     <div class="wrapper">
         <div class="header">
             <h1>QR CODE GENERATOR</h1>
-            <p>Enter your content for generate your QR code</p>
+            <p>Enter your content for generate QR code</p>
         </div>
         <div class="form">
-            <input type="text" placeholder="Enter content">
-            <button>Generate QR</button>
+            <input spellcheck="false" type="text" placeholder="Enter content">
+            <button>Generate QR Code</button>
         </div>
         <div class="result">
+            <p>Your QR</p>
             <img src="" alt="">
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+<!-- generateBtn.addEventListener('click', ()=>{
+    let value = qrText.value;
+    if(!value.trim()) return;
+    qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${value}`
+    qrImg.addEventListener('load',()=>{
+        wrapper.classList.add('active');
+    })
+})
+
+qrText.addEventListener('keyup',()=>{
+  if(qrText.value.trim() 
+}) -->
